@@ -6,9 +6,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #e74c3c, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e74c3c, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#card{
+	background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	opacity: 0.8;
+}
+@font-face {
+font-family: 'Cartoon Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Cartoon Regular'), url('containers/Cartoon_Regular.woff') format('woff');
+}
+h1{
+	font-family:'Cartoon Regular';
+	font-weight:  200;
 }
